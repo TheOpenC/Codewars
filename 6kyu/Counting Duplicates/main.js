@@ -32,7 +32,7 @@ function dupeCount(str){
     const uniques = new Set(arr);
 
     // for each letter, push in a key to the obj
-    arr.forEach(l => obj.add(l))
+    arr.forEach(l => arr.push(l))
 
     console.log(obj)
 
