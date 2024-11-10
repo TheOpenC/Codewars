@@ -8,3 +8,11 @@
 
 // [] --> []
 // ["a", "b", "c"] --> ["1: a", "2: b", "3: c"]
+
+function number(array){
+let newArr = []
+array.forEach((line, index) => newArr.push(`${index +1}: ${line}`))
+return newArr
+
+}
+
