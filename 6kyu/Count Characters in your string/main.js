@@ -19,4 +19,4 @@ function count(string) {
 count('a')
 count('ab')
 count('abaa')
-count('AaBbbbBCcCcCc')
+console.log(count('AaBbbbBCcCcCc'))
