@@ -12,18 +12,15 @@
 
 function automorphic(n){
     let sq = n * n
-    let count = 0
-    let arrN = n.toString().split('')
-    let str = sq.toString().split('')
-   // let digits = arrN.map(num =>  )
-    
-    for(i = 0; i <= arrN.length; i++){
-        console.log(str[str.length - arrN.length + i])
+    let count = n.toString().length
+    let str = sq.toString().lastIndexOf(n)
+    if (str == 0){
+        return count == 1 ? "Automorphic" : "Not!!"
+    } else {
+    return str >= (count - 1) ? "Automorphic" : "Not!!"
     }
-    
-     // your code here
-  }
+}
 
 
   
-automorphic(25)
+console.log(automorphic(3))
