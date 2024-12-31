@@ -1,0 +1,6 @@
+.DS_Store
+SoulseekQt/
+.bash*
+.config/
+.cache/
+
