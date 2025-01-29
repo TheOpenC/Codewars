@@ -7,11 +7,13 @@
 
 
 class Dinglemouse{
-    constructor( firstName, lastName ){
-    }
-    getFullName(){
-      return firstName+" "+lastName
-    }
-    
+  constructor( firstName, lastName ){
+    this.firstName = firstName;
+    this.lastName = lastName;
   }
-  new Dinglemouse("John", "Hamm")
+
+  getFullName(){
+    return (this.firstName+" "+this.lastName).trim()
+  }
+  
+}
