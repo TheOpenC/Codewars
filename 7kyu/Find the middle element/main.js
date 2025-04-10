@@ -1,13 +1,16 @@
-// Finish the solution so that it sorts the passed in array of numbers. If the function passes in an empty array or null/nil value then it should return an empty array.
+// Write a function that takes an array of strings as an argument and returns a sorted array containing the same strings, ordered from shortest to longest.
 
-// For example:
+// For example, if this array were passed as an argument:
 
-// solution([1, 2, 10, 50, 5]); // should return [1,2,5,10,50]
-// solution(null); // should return []
+// ["Telescopes", "Glasses", "Eyes", "Monocles"]
+// Your function would return the following array:
 
+// ["Eyes", "Glasses", "Monocles", "Telescopes"]
+// All of the strings in the array passed to your function will be different lengths, so you will not have to decide how to order multiple strings of the same length.
 
-function solution(nums){
-   return nums ? nums.sort((a, b) => a - b) : [];
-}
+function sortByLength (array) {
+   return array.sort((a, b) => a.length - b.length);
+ }
 
-console.log(solution([]));
+// Suggested code may be subject to a license. Learn more: ~LicenseLog:2614440412.
+console.log(sortByLength(["Telescopes", "Glasses", "Eyes", "Monocles"]))
